@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Word Add-In with Commands Sample</title>
+
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="Scripts/FabricUI/MessageBanner.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- 要允许使用 Office.js 的本地引用进行脱机调试，请使用:                        -->
+    <!-- <script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+
+    <!-- 对于 Office UI Fabric，请转至 https://aka.ms/office-ui-fabric 了解详细信息。 -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- 要离线使用 Office UI Fabric，请使用: -->
+    <!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+    <!-- link rel="stylesheet" href="Content/fabric.components.min.css" -->
+</head>
+<body>
+    <div id="content-header">
+        <div class="padding">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+            <p>Choose the buttons below to add boilerplate text to the document by using the Word JavaScript API.</p>
+            <br />
+            <h3>Try it out</h3>
+            <button id="emerson">Add quote from Ralph Waldo Emerson</button>
+            <br /><br />
+            <button id="checkhov">Add quote from Anton Chekhov</button>
+            <br /><br />
+            <button id="proverb">Add Chinese proverb</button>
+            <br /><br />
+            <button class="ms-Button" id="insert-paragraph">Insert Paragraph</button>
+            <br /><br />
+            <button class="ms-Button" id="apply-style">Apply Style</button>
+            <br /><br />
+            <button class="ms-Button" id="apply-custom-style">Apply Custom Style</button>
+            <br /><br />
+            <button class="ms-Button" id="change-font">Change Font</button>
+            <br /><br />
+            <button class="ms-Button" id="insert-text-into-range">Insert Abbreviation</button>
+            <br /><br />
+            <button class="ms-Button" id="insert-text-outside-range">Add Version Info</button>
+            <br /><br />
+            <button class="ms-Button" id="replace-text">Change Quantity Term</button>
+            <br /><br />
+            <button class="ms-Button" id="insert-image">插入图片</button>
+            <br /><br />
+            <button class="ms-Button" id="insert-html">插入HTML</button>
+            <br /><br />
+            <button class="ms-Button" id="insert-table">Insert Table</button>
+            <br /><br />
+            <button class="ms-Button" id="create-content-control">Create Content Control</button>
+            <br /><br />
+            <button class="ms-Button" id="replace-content-in-control">Rename Service</button>
+        </div>
+    </div>
+    <br />
+    <div id="supportedVersion" />
+</body>
+</html>
